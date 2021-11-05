@@ -1,6 +1,13 @@
 # Spatial Autocorrlation with the 2nd Edition of the Spatial Analysis Book
 # https://study.sagepub.com/brunsdon2e 
 
+# I followed the book's chapter 7 example. But since the book has been written in 2018, 
+# some of the functions have been depreciated. It took me sometime to find replacement. 
+# For the original code that doesn't work anymore, you can see I hashtagged those out. 
+# I added the modified code right under it for comparison. 
+
+# The resources that helped me to determine what to do with the functions are at the bottom of this script. 
+
 
 # Make sure the necessary packages have been loaded
 library(tmap)
@@ -8,8 +15,6 @@ library(tmaptools)
 library(SpatialEpi)
 library(sf) # for the st_crs function 
 sf_extSoftVersion()[1:3] #Check the versions of GEOS, GDAL, and PROJ from the sf package 
-
-
 
 # Read in the Pennsylvania lung cancer data
 data(pennLC)
